@@ -5,7 +5,7 @@ RUN apt update && apt install -y git psmisc zip gcc g++
 RUN mkdir -p /dolt
 RUN mkdir -p /investment_data
 
-RUN cd /investment_data && git init && git pull https://github.com/chenditc/investment_data.git
+RUN cd /investment_data && git init && git pull https://github.com/LeoLeeCN/investment_data.git
 RUN  pip install numpy==1.23.5 && pip install --upgrade cython \
    && cd / && git clone https://github.com/microsoft/qlib.git \
    && cd /qlib/ && pip install . && pip install -r scripts/data_collector/yahoo/requirements.txt 
