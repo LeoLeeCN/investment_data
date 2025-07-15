@@ -10,7 +10,7 @@ fi
 
 mkdir -p $WORKING_DIR/dolt
 
-[ ! -d "$WORKING_DIR/dolt/investment_data" ] && cd $WORKING_DIR/dolt && dolt clone chenditc/investment_data
+[ ! -d "$WORKING_DIR/dolt/investment_data" ] && cd $WORKING_DIR/dolt && dolt clone leo_lee/investment_data
 [ ! -d "$WORKING_DIR/qlib" ] && git clone $QLIB_REPO "$WORKING_DIR/qlib"
 
 cd $WORKING_DIR/dolt/investment_data
