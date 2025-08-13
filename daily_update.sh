@@ -1,7 +1,7 @@
 set -e
 set -x
 
-[ ! -d "/dolt/investment_data" ] && echo "initializing dolt repo" && cd /dolt && dolt clone chenditc/investment_data
+[ ! -d "/dolt/investment_data" ] && echo "initializing dolt repo" && cd /dolt && dolt clone leo_lee/investment_data
 cd /dolt/investment_data
 dolt pull
 dolt push
